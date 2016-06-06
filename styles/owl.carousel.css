@@ -44,6 +44,7 @@
 .owl-controls .owl-buttons div{
 	cursor: pointer;
 top:73px;
+font-size: 0;
 	
 }
 .owl-prev{background: url(../image/sprite_carusel.png) -77px 0 no-repeat;

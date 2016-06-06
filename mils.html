@@ -12,7 +12,7 @@
 	<script src="scripts/script.js"></script>
 </head>
 <body>
-	<div class="section-1">
+	<div class="header-info">
 		<header>
 			<div class="logo"></div>
 			<h1 class="tagline">Обмен техники Apple без проблем!</h1>
@@ -38,42 +38,25 @@
 					<div class="rulls__title">Быстро и удобно</div>
 					<div class="rulls__text">Решение принимается на <br>месте. Вам не нужно ждать <br>несколько дней.</div>
 				</div>
-			</div>
-			              
+			</div>			              
 			<button id="button" class="button-main button-main--exchange" value="right">Узнать как я могу обменять технику</button>
 			<div class="gadget-left"></div>
 			<div class="gadget-right"></div>
-		
-			<section class="popup-exchange">
-				<div class="popup__transparent popup__transparent--exchange"></div>
-				<div class="popup__form">
-					<h2 class="popup__title">Как обменять технику?</h2>
-					<ul class="popup__call-form">
-						<li>
-							<form id="popup__contacts"action="#">
-						<input class="popup__button" type="text" size="13" form="popup__contacts"></form>
-						</li>
-						<p class="popup__hint">Введите номер телефона</p></li>
-						<form action=""><button class="popup__wait-for">Жду звонка</button></form></li>
-						<li><p class="feedback">Мы перезвоним вам в течении 30 <br>минут на указанный номер</p></li>
-					</ul>				
-				</div>		
-			</section>
 			<nav>
-			
-				<ul class="menu-nav">
-					<li class="menu-nav__sell menu-nav__sell--logo"><a href="#logo">LOGO</a></li>
-					<li class="menu-nav__sell"><a href="#section2">Наши преимущества</a></li>
-					<li class="menu-nav__sell"><a href="#section3">Калькулятор стоимости</a></li>
-					<li class="menu-nav__sell"><a href="#reguirements">Как обменять технику</a></li>
-					<li class="menu-nav__sell"><a href="#testimonial">Отзывы клиентов</a></li>
-					<li class="menu-nav__sell"><a href="#find-us">Контакты магазинов</a></li>
-				</ul>
-			
+				<div class="container-menu">
+					<ul class="menu-nav">
+						<li class="menu-nav__sell menu-nav__sell--logo"></li>
+						<li class="menu-nav__sell menu-nav__sell--active"><a href="#your-advantage">Наши преимущества</a></li>
+						<li class="menu-nav__sell"><a href="#your-opportunity">Калькулятор стоимости</a></li>
+						<li class="menu-nav__sell"><a href="#requirements">Как обменять технику</a></li>
+						<li class="menu-nav__sell"><a href="#testimonial">Отзывы клиентов</a></li>
+						<li class="menu-nav__sell"><a href="#find-us">Контакты магазинов</a></li>
+					</ul>
+				</div>
 			</nav>
 		</header>
 	</div>
-	<section id="section2">
+	<section id="your-advantage">
 		<h2 class="title">Вы получаете явные преимущества</h2>
 		<div class="advantage">
 			<div class="advantage__picture--price"></div>
@@ -92,7 +75,7 @@
 			<div class="advantage__text"><span>Гарантию на все виды техники</span><br> от специализированного <br>сервисного центра MacPoint</div>
 		</div>
 	</section>
-	<section id="section3">
+	<section id="your-opportunity">
 		<h2 class="title">Мы работаем для того, чтобы вы могли: </h2>
 		<div class="opportunity">
 			<h3 class="opportunity__title"><span>Продать</span> гаджеты Apple:</h3>
@@ -124,23 +107,25 @@
 			</ul>
 			<button class="button-main button-main--grey">Получить актуальный каталог техники</button>
 		</div>
-	</section>
-	<div class="section4">
-		<section>
-			<div class="section4__picture"></div>
-			<div class="section4__text"><p>Вы можете не сомневаться в том, что приобретаете работающий, надежный гаджет. Ведь вся техника проходит тщательную предварительную проверку и предпродажное обслуживание.</p></div>
-		</section>
-   </div>
-   	<section class="section5">
+	</section>	
+   	<section class="another-way">
+		<div class="another-way-backgroud">
+			<figure>
+				<div class="three-gadgets"></div>
+					<figcaption>
+					<div class="three-gadgets-text"><p>Вы можете не сомневаться в том, что приобретаете работающий, надежный гаджет. Ведь вся техника проходит тщательную предварительную проверку и предпродажное обслуживание.</p></div>
+					</figcaption>
+			</figure>
+	   </div>
 		<hgroup>
 			<h2 class="title">Конечно, можно продать или обменять технику <br> другими способами</h2>
-			<h3 class="we-work__subtitle">Существует несколько самых распространенных вариантов продажи, которые имеют существенные недостатки:</h2>
+			<h3 class="we-work__subtitle">Существует несколько самых распространенных вариантов продажи, которые имеют существенные недостатки:</h3>
 		</hgroup> 					
 		<figure class="way">
-			<img class="way__picture"src="image/way_foto1.png" alt="foto1">
+			<img class="way__picture" src="image/way_foto1.png" alt="foto1">
 			<figcaption class="way__content way__content--advertisement">
 				<h1 class="way__title">Через сайты объявлений</h1>
-				<p class="way__text">Хотя на первый взгляд и кажется,<br> что вариант достаточно неплохой, однако:<br><br> можно попасть на аферистов, мошенников;<br> на поиск уходит очень много времени и нервов.</p>
+				<p class="way__text">Хотя на первый взгляд и кажется,<br>что вариант достаточно неплохой, однако:<br><br> можно попасть на аферистов, мошенников;<br> на поиск уходит очень много времени и нервов.</p>
 			</figcaption>			
 		</figure>
 		<figure class="way">
@@ -148,13 +133,13 @@
 				<h1 class="way__title">Обратиться в ломбард</h1>
 				<p class="way__text">Наверняка в вашем городе есть немало подобных <br>невзрачных коморок с надписью «ломбард».<br><br>Вроде, неплохой способ обменять, купить, продать…<br> Но зачастую в таких заведениях делают слишком <br> большую накрутку (200%). К тому же выручка от <br> продажи или обмена будет мизерной.</p>
 			</figcaption>
-			<img class="way__picture"src="image/way_foto2.png" alt="foto2">	
+			<img class="way__picture" src="image/way_foto2.png" alt="foto2">	
 		</figure>
 		<figure class="way">
-			<img class="way__picture"src="image/way-foto3.png" alt="foto3">
+			<img class="way__picture" src="image/way-foto3.png" alt="foto3">
 			<figcaption class="way__content way__content--commission">
 				<h1 class="way__title">Комиссионные магазины техники</h1>
-				<p class="way__text">продавцы таких магазинов безвозвратно скупают всю <br>старую технику. Там же вы можете найти много<br> интересных гаджетов.<br><br>Недостаток состоит в том, что такие магазины не всегда<br> отвечают за безопасность сделки: можно получить<br> краденую вещь и навлечь на себя лишние проблемы.</p>
+				<p class="way__text">Продавцы таких магазинов безвозвратно скупают всю <br>старую технику. Там же вы можете найти много<br> интересных гаджетов.<br>Недостаток состоит в том, что такие магазины не всегда<br> отвечают за безопасность сделки: можно получить<br> краденую вещь и навлечь на себя лишние проблемы.</p>
 			</figcaption>			
 		</figure>			
 	</section>
@@ -169,28 +154,26 @@
 	</div>
 	<section id="requirements">
 		<div class="requirements__title">
-                   <p>У нас всего <br> три требования <br> для обмена устройства:</p>
-                </div>
+            <p>У нас всего <br> три требования <br> для обмена устройства:</p></div>
 		<div class="requirements__list">
 			<div class="requirements__paragraph requirements__paragraph--copy"><p>Копия документа удостоверяющего личность.</p></div>
-			<div class="requirements__paragraph requirements__paragraph--state"><p>Рабочее состояние устройства.<br> Хотя, мы принимаем и те устройства, которые требуют ремонта.<br> Приходите и мы проведем анализ вашего гаджета.</p>
-			</div>
+			<div class="requirements__paragraph requirements__paragraph--state"><p>Рабочее состояние устройства.<br> Хотя, мы принимаем и те устройства, которые требуют ремонта.<br> Приходите и мы проведем анализ вашего гаджета.</p></div>
 			<div class="requirements__paragraph requirements__paragraph--age"><p>Молодые люди до 18 лет должны осуществлять обмен c кем-нибудь из родителей.</p>
 			</div>
-		</div>	
-	</section>	
-	<div class="cost">
-		<div class="cost__title"><p>Узнайте, какой будет стоимость обмена прямо сейчас</p></div>
-		<button class="button-main">Оценить устройство онлайн</button>
-	</div>
+		</div>
+		<div class="requirements__background-cost">
+			<h2 class="cost__title">Узнайте, какой будет стоимость обмена прямо сейчас</h2>
+			<button class="button-main button-main--cost">Оценить устройство онлайн</button>
+		</div>
+	</section>		
 	<section class="catalog">
 		<h2 class="title">Также мы предоставляем широкий выбор <br> аксессуаров для Apple</h2>
 		<p class="catalog__subtitle">Лучше один раз увидеть… Загляните в каталог наших товаров!</p>
 		<figure>
 			<div class="catalog__picture"></div>
 		</figure>
-		<div class="catalog__button-block">			
-			<a class="catalog__link"href="#">www.hotstore.com.ua</a>
+		<div class="catalog__button-block">	
+		 	<div class="catalog__link"><a href="#">www.hotstore.com.ua</a></div>
 			<button class="button-main button-main--catalog">Получить актуальный <br>каталог аксессуаров</button>
 		</div>
 	</section>
@@ -285,14 +268,6 @@
 			</div>				
 		</div>
 	</section>
-
-
-
-
-
-
-
-
 	<section id="find-us">
 		<p class="find-us__title">Найдите наш магазин на карте</p>
 		<div class="find-us__logo"></div>
@@ -306,65 +281,70 @@
 				<li class="contacts__list--mail"><a href="#">email@appletradein.ua</a></li>
 				<li class="contacts__list--skype"><a href="#">skypename</a></li>
 			</ul>
-			<p class="schedule">ПН-ПТ: с 10:00 - 19:00</p>
+			<p class="schedule">ПН-ПТ: с 10:00 — 19:00</p>
 			<ul class="network">
 				<li class="network__facebook"></li>
 				<li class="network__vk"></li>
 				<li class="network__twitter"></li>
 			</ul>
-			<div class="design-by">Mill's это сделали</div>
+			<div class="design-by"><a href="#">Mill's это сделали</a></div>
 		</section>
 	</footer>
-
-
-<!--<section class="popup-consultation-phone.">
-		<div class="popup__transparent"></div>
-			<div class="popup__form">
-				<h2 class="popup__title">Получить консультацию по <br>телефону</h2>
-				<ul class="popup__call-form">
-					<li>
-						<form id="popup__contacts"action="#">
-					<input class="popup__button" type="text" size="13" form="popup__contacts"></form>
-					</li>
-					
-					<li><form action=""><button class="popup__wait-for">Жду звонка</button></form></li>
-					<li><p class="feedback">Мы перезвоним вам в течении 30 <br>минут на указанный номер</p></li>
-				</ul>				
-			</div>		
-	</section>-->
+	<!--popups-->
+	<!--popup for .header-info-->
+	<section class="popup-exchange">
+		<div class="popup__transparent popup__transparent--exchange"></div>
+		<div class="popup__close-button popup__close-button--exchange"></div>
+		<div class="popup__form">
+			<h2 class="popup__title">Как обменять технику?</h2>
+			<ul class="popup__call-form">
+				<li><form id="popup__contacts" action="#">
+				<input class="popup__button" type="text" maxlength="19" size="13" form="popup__contacts"></form></li>
+				<li><form action=""><button class="popup__wait-for">Жду звонка</button></form></li>
+				<li><p class="feedback">Мы перезвоним вам в течении 30 <br>минут на указанный номер</p></li>
+			</ul>				
+		</div>		
+	</section>
+	<!--popup for .consultation-->
 	<section class="popup-consultation">
 		<div class="popup__transparent popup__transparent--consultation"></div>
+		<div class="popup__close-button popup__close-button--consultation"></div>
+
 		<div class="popup__form">
 			<h2 class="popup__title">Получить консультацию</h2>
 			<ul class="popup__call-form">
 				<li>
-					<form id="popup__contacts"action="#">
+					<form action="#">
 				<input class="popup__button" type="text" size="13" form="popup__contacts"></form></li>				
 				<li><form action=""><button class="popup__wait-for">Жду звонка</button></form></li>
 				<li><p class="feedback">Мы перезвоним вам в течении 30 <br>минут на указанный номер</p></li>
 			</ul>				
 		</div>		
 	</section>
+	<!--popup for .catalog-->
 	<section class="popup-consultation-catalog">
 		<div class="popup__transparent popup__transparent--catalog"></div>
+		<div class="popup__close-button popup__close-button--consultation-catalog"></div>
 		<div class="popup__form">
-			<h2 class="popup__title">проконсультироваться по каталогу товаров</h2>
+			<h2 class="popup__title">Проконсультироваться по каталогу</h2>
 			<ul class="popup__call-form">
-				<li><form id="popup__contacts"action="#">
+				<li><form action="#">
 				<input class="popup__button" type="text" size="13" form="popup__contacts"></form></li>				
-				<li><form action=""><button class="popup__wait-for">Жду звонка</button></form></li>
+				<li><form action="#"><button class="popup__wait-for">Жду звонка</button></form></li>
 				<li><p class="feedback">Мы перезвоним вам в течении 30 <br>минут на указанный номер</p></li>
+
 			</ul>				
 		</div>		
 	</section>
+	<!--popup for #your-opportunity-->	
 	<section class="popup-save">
 		<div class="popup__transparent popup__transparent--save">
+			<div class="popup-save__button-close"></div>
 			<section class="popup-content">
 				<hgroup>	
 					<h2 class="popup-content__title">Узнайте сколько вы можете сэкономить обменяв Б/У девайс на новый</h2>
 					<h3 class="popup-content__subtitle">Чтобы узнать сколько вам нужно доплатить за обмен, выберите ваше устройство и устройство, которое вы хотите получить</h3>
 				</hgroup>
-
 				<section>
 					<div class="popup-content__selection popup-content__selection--left">
 						<div class="popup-content__select popup-content__select--arrow-left"></div>
@@ -373,15 +353,14 @@
 								<div class="popup-content__button-back"><a class="back"><span>Назад</span></a></div>
 								<ul class="popup-content__menu">
 									<li class="menu__type-group"><span>iPhone 4</span></li>
-									<li class="menu__model" data-productid="1" data-price-left="2000">				
+									<li class="menu__model" data-productid="1" data-price-left="2000">
 										<p class="menu__type">iPhone 4</p>
 										<p class="menu__specification">3G</p>
 										<p class="menu__specification">8Gb</p>
 										<p class="menu__specification"><span>Space Gray</span></p>
-										<div class="menu__arrow"href="#"></div>
+										<div class="menu__arrow" href="#"></div>
 									</li>
-									<li class="menu__model"  data-productid="2" data-price-left="2500">
-										<p class="menu__type">iPhone 4</p>
+									<li class="menu__model"  data-productid="2" data-price-left="2500">	<p class="menu__type">iPhone 4</p>
 										<p class="menu__specification">3G</p>
 										<p class="menu__specification">16Gb</p>
 										<p class="menu__specification">Space Gray</p>
@@ -419,110 +398,108 @@
 								</ul>
 							</div>				
 							<div class="products products--left">
-									<div class="product-card--left" data-id="1">	
-										<hgroup>
-											<h2 class="selected-model__title">Ваше устройство</h2>
-											<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
-										</hgroup>
-										<div class="selected-model__line"></div>	
-										<figure>
-											<img class="selected-model__your-gadget"src="image/my_gadget-left.png" alt="your-gadget">
-											<figcaption>
-												<p class="selected-model__price">Оценочная стоимость 2000 грн</p>
-											</figcaption>					
-										</figure>
-										<div class="selected-model__line"></div>
-										<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
-										</a>
-									</div>
-									<div class="product-card--left" data-id="2">	
-										<hgroup>
-											<h2 class="selected-model__title">Ваше устройство</h2>
-											<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
-										</hgroup>
-										<div class="selected-model__line"></div>	
-										<figure>
-											<img class="selected-model__your-gadget"src="image/my_gadget-left.png" alt="your-gadget">
-											<figcaption>
-												<p class="selected-model__price">Оценочная стоимость 2500 грн</p>
-											</figcaption>					
-										</figure>
-										<div class="selected-model__line"></div>
-										<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
-										</a>
-									</div>
-									<div class="product-card--left" data-id="3">	
-										<hgroup>
-											<h2 class="selected-model__title">Ваше устройство</h2>
-											<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
-										</hgroup>
-										<div class="selected-model__line"></div>	
-										<figure>
-											<img class="selected-model__your-gadget"src="image/my_gadget-left.png" alt="your-gadget">
-											<figcaption>
-												<p class="selected-model__price">Оценочная стоимость 3000 грн</p>
-											</figcaption>					
-										</figure>
-										<div class="selected-model__line"></div>
-										<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
-										</a>
-									</div>
-									<div class="product-card--left" data-id="4">	
-										<hgroup>
-											<h2 class="selected-model__title">Ваше устройство</h2>
-											<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
-										</hgroup>
-										<div class="selected-model__line"></div>	
-										<figure>
-											<img class="selected-model__your-gadget"src="image/my_gadget-left.png" alt="your-gadget">
-											<figcaption>
-												<p class="selected-model__price">Оценочная стоимость 3000 грн</p>
-											</figcaption>					
-										</figure>
-										<div class="selected-model__line"></div>
-										<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
-										</a>
-									</div>
-									<div class="product-card--left" data-id="5">	
-										<hgroup>
-											<h2 class="selected-model__title">Ваше устройство</h2>
-											<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
-										</hgroup>
-										<div class="selected-model__line"></div>	
-										<figure>
-											<img class="selected-model__your-gadget"src="image/my_gadget-left.png" alt="your-gadget">
-											<figcaption>
-												<p class="selected-model__price">Оценочная стоимость 3000 грн</p>
-											</figcaption>					
-										</figure>
-										<div class="selected-model__line"></div>
-										<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
-										</a>
-									</div>
-									<div class="product-card--left" data-id="6">	
-										<hgroup>
-											<h2 class="selected-model__title">Ваше устройство</h2>
-											<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
-										</hgroup>
-										<div class="selected-model__line"></div>	
-										<figure>
-											<img class="selected-model__your-gadget"src="image/my_gadget-left.png" alt="your-gadget">
-											<figcaption>
-												<p class="selected-model__price">Оценочная стоимость 2000 грн</p>
-											</figcaption>					
-										</figure>
-										<div class="selected-model__line"></div>
-										<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
-										</a>
-									</div>
+								<div class="product-card--left" data-id="1">	
+									<hgroup>
+										<h2 class="selected-model__title">Ваше устройство</h2>
+										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
+									</hgroup>
+									<div class="selected-model__line"></div>	
+									<figure>
+										<img class="selected-model__your-gadget" src="image/my_gadget-left.png" alt="your-gadget">
+										<figcaption>
+											<p class="selected-model__price">Оценочная стоимость 2000 грн</p>
+										</figcaption>					
+									</figure>
+									<div class="selected-model__line"></div>
+									<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
+									
+								</div>
+								<div class="product-card--left" data-id="2">	
+									<hgroup>
+										<h2 class="selected-model__title">Ваше устройство</h2>
+										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
+									</hgroup>
+									<div class="selected-model__line"></div>	
+									<figure>
+										<img class="selected-model__your-gadget" src="image/my_gadget-left.png" alt="your-gadget">
+										<figcaption>
+											<p class="selected-model__price">Оценочная стоимость 2500 грн</p>
+										</figcaption>					
+									</figure>
+									<div class="selected-model__line"></div>
+									<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
+									
+								</div>
+								<div class="product-card--left" data-id="3">	
+									<hgroup>
+										<h2 class="selected-model__title">Ваше устройство</h2>
+										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
+									</hgroup>
+									<div class="selected-model__line"></div>	
+									<figure>
+										<img class="selected-model__your-gadget" src="image/my_gadget-left.png" alt="your-gadget">
+										<figcaption>
+											<p class="selected-model__price">Оценочная стоимость 3000 грн</p>
+										</figcaption>					
+									</figure>
+									<div class="selected-model__line"></div>
+									<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
+								
+								</div>
+								<div class="product-card--left" data-id="4">	
+									<hgroup>
+										<h2 class="selected-model__title">Ваше устройство</h2>
+										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
+									</hgroup>
+									<div class="selected-model__line"></div>	
+									<figure>
+										<img class="selected-model__your-gadget" src="image/my_gadget-left.png" alt="your-gadget">
+										<figcaption>
+											<p class="selected-model__price">Оценочная стоимость 3000 грн</p>
+										</figcaption>					
+									</figure>
+									<div class="selected-model__line"></div>
+									<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
+									
+								</div>
+								<div class="product-card--left" data-id="5">	
+									<hgroup>
+										<h2 class="selected-model__title">Ваше устройство</h2>
+										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
+									</hgroup>
+									<div class="selected-model__line"></div>	
+									<figure>
+										<img class="selected-model__your-gadget" src="image/my_gadget-left.png" alt="your-gadget">
+										<figcaption>
+											<p class="selected-model__price">Оценочная стоимость 3000 грн</p>
+										</figcaption>					
+									</figure>
+									<div class="selected-model__line"></div>
+									<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
+									
+								</div>
+								<div class="product-card--left" data-id="6">	
+									<hgroup>
+										<h2 class="selected-model__title">Ваше устройство</h2>
+										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
+									</hgroup>
+									<div class="selected-model__line"></div>	
+									<figure>
+										<img class="selected-model__your-gadget" src="image/my_gadget-left.png" alt="your-gadget">
+										<figcaption>
+											<p class="selected-model__price">Оценочная стоимость 2000 грн</p>
+										</figcaption>					
+									</figure>
+									<div class="selected-model__line"></div>
+									<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>										
+								</div>
 							</div>
 						</div>
 					</div>
-
-					<div class="popup-content__transparent-block"></div>	
 					<div class="popup-content__selection popup-content__selection--right">
 						<div class="popup-content__select popup-content__select--arrow-right"></div>
-						<div class="popup-content__list popup-content__list--right">	
+						<div class="popup-content__list popup-content__list--right">
+							<div class="popup-content__transparent-block"></div>
 							<div class="menu-new-products">
 								<div class="popup-content__button-back"><a class="back"><span>Назад</span></a></div>
 								<ul class="popup-content__menu">
@@ -580,14 +557,14 @@
 									</hgroup>
 									<div class="selected-model__line"></div>	
 									<figure>
-										<img class="selected-model__your-gadget"src="image/my_gadget-left.png" alt="your-gadget">
+										<img class="selected-model__your-gadget" src="image/my_gadget-left.png" alt="your-gadget">
 										<figcaption>
 											<p class="selected-model__price">Оценочная стоимость 5000 грн</p>
 										</figcaption>					
 									</figure>
 									<div class="selected-model__line"></div>
 									<a class="another-gadget another-gadget--right">Выбрать другое устройство</a>
-									</a>
+									
 								</div>
 								<div class="product-card--right" data-parentproductid="1" data-subid="2">	
 									<hgroup>
@@ -596,14 +573,14 @@
 									</hgroup>
 									<div class="selected-model__line"></div>	
 									<figure>
-										<img class="selected-model__your-gadget"src="image/my_gadget-left.png" alt="your-gadget">
+										<img class="selected-model__your-gadget" src="image/my_gadget-left.png" alt="your-gadget">
 										<figcaption>
 											<p class="selected-model__price">Оценочная стоимость 4000 грн</p>
 										</figcaption>					
 									</figure>
 									<div class="selected-model__line"></div>
 									<a class="another-gadget another-gadget--right">Выбрать другое устройство</a>
-									</a>
+									
 								</div>
 								<div class="product-card--right" data-parentproductid="1" data-subid="3">	
 									<hgroup>
@@ -612,14 +589,14 @@
 									</hgroup>
 									<div class="selected-model__line"></div>	
 									<figure>
-										<img class="selected-model__your-gadget"src="image/my_gadget-left.png" alt="your-gadget">
+										<img class="selected-model__your-gadget" src="image/my_gadget-left.png" alt="your-gadget">
 										<figcaption>
 											<p class="selected-model__price">Оценочная стоимость 5000 грн</p>
 										</figcaption>					
 									</figure>
 									<div class="selected-model__line"></div>
 									<a class="another-gadget another-gadget--right">Выбрать другое устройство</a>
-									</a>
+									
 								</div>
 								<div class="product-card--right" data-parentproductid="1" data-subid="4">	
 									<hgroup>
@@ -628,14 +605,14 @@
 									</hgroup>
 									<div class="selected-model__line"></div>	
 									<figure>
-										<img class="selected-model__your-gadget"src="image/my_gadget-left.png" alt="your-gadget">
+										<img class="selected-model__your-gadget" src="image/my_gadget-left.png" alt="your-gadget">
 										<figcaption>
 											<p class="selected-model__price">Оценочная стоимость 4000 грн</p>
 										</figcaption>					
 									</figure>
 									<div class="selected-model__line"></div>
 									<a class="another-gadget another-gadget--right">Выбрать другое устройство</a>
-									</a>
+									
 								</div>
 								<div class="product-card--right" data-parentproductid="1" data-subid="5">	
 									<hgroup>
@@ -644,14 +621,14 @@
 									</hgroup>
 									<div class="selected-model__line"></div>	
 									<figure>
-										<img class="selected-model__your-gadget"src="image/my_gadget-left.png" alt="your-gadget">
+										<img class="selected-model__your-gadget" src="image/my_gadget-left.png" alt="your-gadget">
 										<figcaption>
 											<p class="selected-model__price">Оценочная стоимость 5000 грн</p>
 										</figcaption>					
 									</figure>
 									<div class="selected-model__line"></div>
 									<a class="another-gadget another-gadget--right">Выбрать другое устройство</a>
-									</a>
+									
 								</div>
 								<div class="product-card--right" data-parentproductid="1" data-subid="6">	
 									<hgroup>
@@ -660,14 +637,14 @@
 									</hgroup>
 									<div class="selected-model__line"></div>	
 									<figure>
-										<img class="selected-model__your-gadget"src="image/my_gadget-left.png" alt="your-gadget">
+										<img class="selected-model__your-gadget" src="image/my_gadget-left.png" alt="your-gadget">
 										<figcaption>
 											<p class="selected-model__price">Оценочная стоимость 4000 грн</p>
 										</figcaption>					
 									</figure>
 									<div class="selected-model__line"></div>
 									<a class="another-gadget another-gadget--right">Выбрать другое устройство</a>
-									</a>
+									
 								</div>
 							</div>
 						</div>
@@ -675,26 +652,23 @@
 				</section>
 					<p class="call-form__title">Не хотите тратить время?<br><span>Оставьте номер и мы проконсультируем вас по телефону.</span></p>
 					<ul class="popup__call-form popup__call-form--save">
-						<li><form id="popup__contacts"action="#">
+						<li><form action="#">
 						<input class="popup__button popup__button--border" type="text" size="13" form="popup__contacts"></form>
 						</li>
 						<li><form action=""><button class="popup__wait-for popup__wait-for--blue">Жду звонка</button></form></li>
 						<li><p class="feedback feedback--color">Оформление заявки не обязывает вас <br> к покупке или продаже устройства!</p></li>
 					</ul>
-					<section>
-						<div class="popup-content__sum">
-							<!--<p class="popup-content__sum-title">gdfgdfgd</p>-->
+					<section class="result">
+						<div class="popup-content__result">
+							<p class="popup-content__result-title"></p>
 							<form action=""><button class="popup__wait-for popup__wait-for--blue">Обменять устройство</button></form>
 							<p class="feedback feedback--color">Оформление заявки не обязывает вас <br> к покупке или продаже устройства!</p>
 						</div>
 					</section>
-
-
 				<section class="popup-content__buttom-block">
 					<div class="popup-content__buttom-icon popup-content__buttom-icon--cool"><span>Сервис от опытных специалистов</span><br>Мы обслужили уже <br>более 10 000 клиентов.</div>
 					<div class="popup-content__buttom-icon popup-content__buttom-icon--pig"><span>Наиболее выгодные цены</span><br>благодаря крупному <br>товарообороту.</div>
 					<div class="popup-content__buttom-icon popup-content__buttom-icon--gadget"><span>Гарантия исправности<br>и безопасности</span>— мы проверяем<br>свои товары.</div>
-					
 					<div class="popup-content__buttom-icon popup-content__buttom-icon--assurance"><span>Гарантию на все виды техники</span><br>от специализированного<br> сервисного центра MacPoint.</div>
 				</section>
 			</section>
