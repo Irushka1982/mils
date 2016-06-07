@@ -71,7 +71,6 @@ $(document).ready(function(){
 
 });
 
-
         $(".another-gadget--left").click(function(e){
          e.preventDefault(); 
          
