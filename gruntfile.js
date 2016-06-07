@@ -12,6 +12,14 @@ module.exports = function(grunt) {
       }]
     }
   },
+  uglify: {
+      
+      dist: {
+        src: ['scripts/script.js'],
+        dest: 'scripts/script.min.js'
+      }
+    },
+
   watch: {
     sass: {
       // We watch and compile sass files as normal but don't live reload here
@@ -23,7 +31,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
-  grunt.registerTask('default', ['sass'], ['watch']);
+grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.registerTask('default', ['sass'],['watch'],['uglify']);
 
 };
