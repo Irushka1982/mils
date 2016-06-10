@@ -2,19 +2,19 @@
 $(document).ready(function(){
 /* show and hide popup-exchange window*/
         $(".button-main--exchange, .popup__transparent--exchange, .popup__close-button--exchange").click(function(){
-            $(".popup-exchange").slideToggle("slow");
+        $(".popup-exchange").slideToggle("slow");
         }); 
 /* show and hide popup-consultation window*/
-     $(".popup__close-button--consultation, .button-main--consultation, .consultation__picture,  .popup__transparent--consultation").click(function(){
-            $(".popup-consultation").slideToggle("slow");
+        $(".popup__close-button--consultation, .button-main--consultation, .consultation__picture,  .popup__transparent--consultation").click(function(){
+        $(".popup-consultation").slideToggle("slow");
         });
 /* show and hide popup-consultation-catalog window*/
-     $(".popup__close-button--consultation-catalog, .button-main--catalog, .popup__transparent--catalog").click(function(){
-            $(".popup-consultation-catalog").slideToggle("slow");
+        $(".popup__close-button--consultation-catalog, .button-main--catalog, .popup__transparent--catalog").click(function(){
+        $(".popup-consultation-catalog").slideToggle("slow");
         });
 
     $("button.button-main--grey,.back").eq(1).click(function(){
-            $(".popup-save").slideToggle("slow");});
+         $(".popup-save").slideToggle("slow");});
 
     $(".back, .button-main--cost").click(function(){
             $(".popup-save").slideToggle("slow");
@@ -29,8 +29,7 @@ $(document).ready(function(){
 
     
 /*  click function to select a product, menu-old-products; */
-  
-  
+    
       $(".menu-old-products li").click(function(e){
           e.preventDefault();
           var id = $(this).attr("data-productid");/* get attributes;*/
@@ -67,7 +66,7 @@ $(document).ready(function(){
           priceRight = $(this).attr("data-price-right");
 
 
-             $(function () {
+             $(function countResults() {
 
             if(+priceLeft < +priceRight){
              mainprice = Math.abs(+priceLeft - +priceRight);/*count if priceLeft < priceRight*/
@@ -129,7 +128,7 @@ click on the link on the right cards-block;*/
        });
 
 /*carusel with testimonials*/
-    	$(function() {
+    	$(function () {
                $("#owl-demo").owlCarousel({     
                   navigation : true, 
                   slideSpeed : 500,
@@ -162,7 +161,7 @@ click on the link on the right cards-block;*/
     	});
 
 /*auto hover when scroll*/
-    var lastId,
+       var lastId,
         topMenu = $(".menu-nav"),
         topMenuHeight = topMenu.outerHeight()+15,    
         menuItems = topMenu.find("a"),   
