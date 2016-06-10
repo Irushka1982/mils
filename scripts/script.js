@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-/*popup animation show*/
+/*popup  show and hide popup window*/
         $(".button-main--exchange, .popup__transparent--exchange, .popup__close-button--exchange").click(function(){
             $(".popup-exchange").slideToggle("slow");
         }); 
@@ -87,7 +87,10 @@ show-hide layers with products*/
 });
   
 /*return to the menu;
-Click on the link on the left cards-block*/
+Click on the link on the left cards-block;
+change of priorities layers
+cleans account of the results
+*/
        $(".another-gadget--left").click(function(e){
          e.preventDefault(); 
        
@@ -101,7 +104,9 @@ Click on the link on the left cards-block*/
       });
 
 /*return to the menu;
-Click on the link on the right cards-block*/
+Click on the link on the right cards-block;
+change of priorities layers
+cleans account of the results*/
       $(".another-gadget--right").click(function(e){
        e.preventDefault();
           $('.menu-new-products').show().css("order","1");
@@ -125,7 +130,7 @@ Click on the link on the right cards-block*/
           $(".popup-content__result-title").empty();
        });
 
-
+/*carusel with testimonials*/
     	$(function() {
                $("#owl-demo").owlCarousel({     
                   navigation : true, 
@@ -136,7 +141,7 @@ Click on the link on the right cards-block*/
               });     
         });
 
-
+/* scroll for menu*/
       $(function() {
           var ul = $(".container-menu");
           $(window).scroll(function() {    
@@ -150,7 +155,7 @@ Click on the link on the right cards-block*/
           });
       });
 
-
+/*leaves menu on top*/
     $(".menu-nav").on("click","a", function (event) {
     		event.preventDefault();
     		var id  = $(this).attr('href'),
@@ -158,7 +163,7 @@ Click on the link on the right cards-block*/
     		$('body,html').animate({scrollTop: top}, 1500);
     	});
 
-    /* auto-hover*/
+/*auto hover when scroll*/
     var lastId,
         topMenu = $(".menu-nav"),
         topMenuHeight = topMenu.outerHeight()+15,    
