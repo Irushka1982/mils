@@ -6,7 +6,8 @@
   font-family: "Amazing Grotesk";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/Amazing Grotesk/Amazing Grotesk Demi.otf") format("otf"); }
+  src: url("../fonts/Amazing Grotesk/Amazing Grotesk Demi.otf") format("otf");
+   }
 .title {
   font-size: 36px;
   text-align: center;

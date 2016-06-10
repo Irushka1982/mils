@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-
+/*popup animation show*/
         $(".button-main--exchange, .popup__transparent--exchange, .popup__close-button--exchange").click(function(){
             $(".popup-exchange").slideToggle("slow");
         }); 
@@ -21,11 +21,13 @@ $(document).ready(function(){
             $(".popup-content__result").hide();
             (".popup-content__result-title").empty();
         });
-
+/*variables to count*/
     var priceLeft;
     var priceRight;
     var mainprice;
-
+/* left click function;
+get attributes;
+show-hide layers with products*/
       $(".menu-old-products li").click(function(e){
           e.preventDefault();
           var id = $(this).attr("data-productid");
@@ -43,7 +45,9 @@ $(document).ready(function(){
            priceLeft = $(this).attr("data-price-left");           
        
       });
-
+/* right click function;
+get attributes;
+show-hide layers with products*/
        $(".menu-new-products li").click(function(e){
             e.preventDefault();
             var parent_id = $(this).attr("data-parentproductid");
@@ -58,7 +62,8 @@ $(document).ready(function(){
            $(".popup-content__select--arrow-right").hide();
 
           priceRight = $(this).attr("data-price-right");
-    
+
+
              $(function () {
 
             if(+priceLeft < +priceRight){
@@ -81,7 +86,8 @@ $(document).ready(function(){
     }
 });
   
-
+/*return to the menu;
+Click on the link on the left cards-block*/
        $(".another-gadget--left").click(function(e){
          e.preventDefault(); 
        
@@ -94,7 +100,8 @@ $(document).ready(function(){
           $(".popup-content__result").hide(); 
       });
 
-
+/*return to the menu;
+Click on the link on the right cards-block*/
       $(".another-gadget--right").click(function(e){
        e.preventDefault();
           $('.menu-new-products').show().css("order","1");
