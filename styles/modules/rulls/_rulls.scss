@@ -1,0 +1,46 @@
+.work-rulls {
+	text-align:center;
+}
+
+.rulls{
+	font-size:13px;
+	width:210px;
+	display:inline-block;
+	margin:auto;
+	text-align:center;
+	color:$white;
+	padding-bottom:32px;
+}
+.rulls__icon--bomb{
+	content:"";
+	background:url(../image/bomb-pig_sprite1.png) no-repeat;
+	width:55px;
+	height:59px;
+	position:relative;
+	top:0px;
+	left:62px;
+	padding-bottom:18px;
+}
+
+.rulls__icon--pig{
+	@extend .rulls__icon--bomb;
+	background-position:-58px 0;
+}
+
+.rulls__icon--place{
+	@extend .rulls__icon--bomb;
+	background-position:-114px 0;
+}
+
+.rulls__title{
+	font-size:12px;
+	font-family:$roboto;
+	padding-bottom:6px;
+}
+
+.rulls__text{
+	font-size:11px;
+	line-height:16px;
+	font-family:$roboto;
+	width:192px;
+}

@@ -1,0 +1,60 @@
+
+
+.selected-model__title {
+	font-family:$roboto;
+	font-size:18px;
+	font-weight:normal;
+	color:#999999;
+	padding-top:30px;
+	padding-bottom:4px;
+}
+.selected-model__subtitle{
+	font-family:$roboto;
+	font-size:14px;
+	font-weight:normal;
+	color:#504d4d;
+}
+
+.selected-model__price{
+	font-family:$roboto;
+	font-size:14px;
+	font-weight:normal;
+	color:#999999;
+	padding-top:15px;
+	padding-left:15px;
+}
+.selected-model__line{
+	width:75%;
+	height:1px;
+	background-color:$greylight;
+	margin:auto;
+	margin-bottom:17px;
+	margin-top:17px;
+}
+.selected-model__your-gadget{
+	margin:auto;
+}
+.another-gadget{
+	font-family:$roboto;
+	font-size:14px;
+	font-weight:normal;
+	color:#423f3f;
+	border-bottom: 1px dotted #423f3f;
+}
+
+.products--left{
+	display:none;
+	position:absolute;
+	width:318px;
+	height:439px;
+	z-index:9999;
+	text-align:center;
+}
+.products--right{
+	display:none;
+	position:absolute;
+	width:318px;
+	height:439px;
+	z-index:9999;
+	text-align:center;
+}

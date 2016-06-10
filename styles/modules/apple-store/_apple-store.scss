@@ -1,0 +1,27 @@
+
+.apple-store{
+	background:url(../image/apple-store_bkg.png)0px 0px no-repeat;
+	height:70px;
+	width:320px;
+	margin:auto;
+	padding-bottom:25px;
+}
+.apple-store__text{
+	font-size:11px;
+	width:128px;
+	font-family:$roboto;
+	color: $greymiddle;
+	font-weight:normal;
+	padding-top:15px;
+	padding-left:8px;
+}
+.apple-store__logo{
+	content: "";
+	background:url(../image/hot-store.png)no-repeat;
+	position:relative;
+	z-index:2;
+	top:-27px;
+	left:145px;
+	width:115px;
+	height: 26px;
+}

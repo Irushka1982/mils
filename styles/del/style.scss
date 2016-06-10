@@ -16,14 +16,35 @@ $greylight:#999999;
 $greydark:#333333;
 $greymoredark:#666666;
 $bluefind-us:#30a9e5;
-$roboto: 'Roboto', sans-serif;
-$missfonts:'Open+Sans', sans-serif;
 $white:#ffffff;
+
+$roboto: 'Roboto', sans-serif;
+
+$missfonts:'Amazing Grotesk';
+
+
+
+
+
+@font-face {
+    font-family: "Amazing Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/Amazing Grotesk/Amazing Grotesk Demi.otf") format("otf"),
+    
+        /* url("fonts/Samplinal.woff2") format("woff2"),*/
+        /* url("../fonts/Amazing_Grotesk/Amazing_Grotesk_Demi.woff") format("woff");*/
+}
+
+
+
 *{
 	margin:0;
 	padding:0;
 }
 /*styles for header-info*/
+
+
 .header-info{
 	background:url(../image/background_header.png)no-repeat;
 	background-size:100% 818px;
@@ -86,9 +107,14 @@ $white:#ffffff;
 	font-weight:normal;
 	padding-bottom:20px
 }
+
+
+/*rulls module start*/
+/*
 .work-rulls {
 	text-align:center;
 }
+
 .rulls{
 	font-size:13px;
 	width:210px;
@@ -130,7 +156,10 @@ $white:#ffffff;
 	line-height:16px;
 	font-family:$roboto;
 	width:192px;
-}
+}*/
+/*rulls module finish*/
+
+/*button model start
 .button-main {
 	margin:auto;	
 	width:270px;
@@ -148,7 +177,11 @@ $white:#ffffff;
 	background:$blue-button-click;
 	border:none;
 }
-.gadget-left{
+button model finish*/
+
+
+/*all module start*/
+.gadget-left{ 
 	content:"";
 	background:url(../image/picture-left.png) no-repeat;
 	width:480px;
@@ -166,8 +199,14 @@ $white:#ffffff;
 	right:0px;
 	top:80px;
 }
-/*styles for nav*/
-/*sticky-menu*/
+/*all module fifnish*/
+
+
+
+
+/*menu module start*/
+
+
 .container-menu{
 	width:100%;
 	height: 50px;
@@ -183,7 +222,7 @@ $white:#ffffff;
 	width:68%;
 	position:absolute;
 }
-/*scroll*/
+
 .nav-active{
 	background-color:rgba(236,236,236,.96);
 	display:table;	
@@ -227,11 +266,11 @@ $white:#ffffff;
 	height:30px;
 	margin:auto;
 }
+/*menu module fifnish*/
 
-/*styles for your-advantage*/
-#your-advantage{
-	text-align:center;
-}
+
+/*global module title
+
 .title{
 	font-size:36px;
 	text-align:center;
@@ -239,6 +278,13 @@ $white:#ffffff;
 	font-family:$missfonts;
 	padding-bottom:38px;
 }
+fifnish global module title*/
+
+/* module advantage start
+#your-advantage{
+	text-align:center;
+}
+
 .advantage{
 	width:284px;
 	text-align:center;
@@ -284,7 +330,13 @@ $white:#ffffff;
 	@extend .advantage__picture--price:before;
 	background-position: -646px 0;
 }
-/*styles for your-advantage*/
+ module advantage finish*/
+
+
+
+/*start module oportunity
+
+
 #your-opportunity{
 	text-align:center;
 	overflow:hidden;
@@ -361,6 +413,9 @@ $white:#ffffff;
 		}
 }
 
+fifnish module oportunity*/
+
+/* button module part 2 start
 .button-main--grey{
 	background:$grey-button-normal;
 }
@@ -371,7 +426,10 @@ $white:#ffffff;
 	background:$grey-button-click;
 }
 
-/*styles for another-way*/
+ button module part 2 finish*/
+
+
+
 
 .another-way-backgroud{
 	height:360px;
@@ -430,6 +488,8 @@ $white:#ffffff;
 	padding-bottom:64px;
 }
 
+
+/*start module way
 .way{
 	margin:auto;
 	height:316px;
@@ -484,7 +544,10 @@ $white:#ffffff;
 	text-align:center;
 	margin:auto;
 }
-/*styles for .consultation*/
+finish module way
+
+
+
 .consultation{
 	background:url(../image/background_consultation.png) no-repeat;
 	background-size:100% 380px;
@@ -514,9 +577,9 @@ $white:#ffffff;
 	width:428px;
 	height:141px;
 	top:-94px;
-}
+}*/
 
-/*styles for requirements*/
+/*start module for requirements
 #requirements{
 	height:857px;
 }
@@ -577,7 +640,7 @@ $white:#ffffff;
 	text-align:center;
 	clear:both;
 }
-.cost__title{
+.requirements__title-cost{
 	display:block;
 	margin:auto;
 	height:80px;
@@ -591,7 +654,10 @@ $white:#ffffff;
 }
 
 
-/*styles for catalog*/
+finish module for requirements*/
+
+
+/*start module for catalog
 .catalog{
 	text-align:center;
 }
@@ -643,17 +709,19 @@ $white:#ffffff;
 		color: $greymoredark;
 	}
 }
+finish module for catalog*/
 
 
+
+/*start module button part3
 .button-main--catalog{
 	display:block;
 	height:87px;
 }
-.title--testimonial{
-	padding-bottom:16px;
-}
 
-/*styles for testimonial*/
+finish module button part3*/
+
+/*start for module testimonial
 
 #testimonial{
 	height:412px;
@@ -664,10 +732,10 @@ $white:#ffffff;
 	height:240px;
 	width:780px;
 	margin:auto;
-	padding-top:74px;
+	padding-top:58px;
 }
 
-/*cards for carusel*/
+
 .testimonial__card{
 	margin:auto;
 	width:728px;
@@ -716,8 +784,10 @@ $white:#ffffff;
 	height:105px;
 	weight:110px;
 }
+finish for module testimonial*/
 
-/*styles for find-us*/
+
+/*start module  for find-us
 #find-us{
 	background:$bluefind-us;
 	height:230px;
@@ -748,6 +818,10 @@ $white:#ffffff;
 	display:block;
 	margin:auto;
 }
+
+finish module  for find-us*/
+
+
 
 /*styles for contacts*/
 .contacts{
@@ -818,7 +892,7 @@ $white:#ffffff;
 }
 
 
-.schedule{
+.contacts__schedule{
 	color:#666666;
 	font-family:$roboto;
 	font-size:14px;
@@ -866,7 +940,7 @@ $white:#ffffff;
 	@extend .network__facebook;
 	background-position:-73px -39px;
 }
-.design-by{
+.contacts__schedule__design-by{
 	float:right;
 	padding-right:23px;
 	a{
@@ -878,7 +952,7 @@ $white:#ffffff;
 	text-decoration:none;
 	}
 }
-.design-by:before{
+.contacts__schedule__design-by:before{
 	content:"";
 	background:url(../image/design_by_logo.png) no-repeat;
 	position:absolute;
@@ -888,7 +962,7 @@ $white:#ffffff;
 	left:53px;
 }
 /*--popups--*/
-/*styles for popup-exchange*/
+/*styles for popup-exchange
 
 .popup-exchange{
 	clear:both;
@@ -926,6 +1000,9 @@ $white:#ffffff;
 .popup-consultation-catalog{
 	@extend .popup-exchange;
 }
+*/
+
+
 .popup-save{
 	clear:both;
 	display:none;
@@ -935,6 +1012,8 @@ $white:#ffffff;
 	top:0px;
 	z-index: 9999;
 }
+/*
+
 .popup__transparent{
 	background:#f2f4f5;
 	opacity:0.3;
@@ -942,7 +1021,7 @@ $white:#ffffff;
 	height:100%;
 	width:73%;
 	float:left;	
-}
+}*/
 .popup-save__button-close{
 	position:absolute;
 	width:61px;
@@ -951,7 +1030,7 @@ $white:#ffffff;
 	top:35px;
 	background:url(../image/popup_close.png) no-repeat;
 	background-position:0px 0px;
-}
+}/*
 .popup__form{
 	width:27%;
 	display:inline-block;
@@ -1027,14 +1106,17 @@ $white:#ffffff;
 	background:#006699;
 	opacity:1;
 }
-.feedback{
+.popup__feedback{
 	font-size:14px;
 	font-family:$roboto;
 	color:$white;
 	padding-top:15px;
 }
 
-/*styles for popup-save*/
+
+
+
+
 .popup__transparent--save{
 	padding-top:61px;
 	width:100%;
@@ -1043,7 +1125,8 @@ $white:#ffffff;
 	opacity:1;
 	background-color: rgba(12, 12, 12, 0.5);
 }
-
+*/
+/*styles for popup-save*/
 .popup-content{
 	height:1050px;
 	width:966px;
@@ -1267,7 +1350,7 @@ $white:#ffffff;
 	background:#30a9e5;
 	color:white;
 }
-.feedback--color{
+.popup__feedback--color{
 	color:#000000;
 	text-align:center;
 	padding-top:2px;
@@ -1312,6 +1395,14 @@ $white:#ffffff;
 	@extend .popup-content__buttom-icon--cool:before;
 	background-position: -167px 0px;
 }
+
+
+
+
+
+
+
+
 
 .products--left{
 	display:none;
@@ -1384,6 +1475,19 @@ $white:#ffffff;
 	z-index:3;
 }
 .popup-content__result-title{
+	font-size:24px;
+	font-family:$missfonts;
+	font-weight:normal;
+	color:#666e72;
+	margin:auto;
+	text-align:center;
+	width:350px;
+	padding-top:32px;
+	padding-bottom:29px;
+	
+}
+
+.popup-content__result-titlea{
 	font-size:24px;
 	font-family:$missfonts;
 	font-weight:normal;

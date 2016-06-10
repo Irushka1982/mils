@@ -1,0 +1,72 @@
+#requirements{
+	height:857px;
+}
+
+.requirements__title{
+	width:684px;
+	display:block;
+	float:left;
+	padding-left:240px;
+		p{
+		font-family:$missfonts;
+		font-size:36px;
+		font-weight: bold;
+		color:$greydark;
+		width:471px;
+		}
+	}
+
+.requirements__list{
+	display:block;
+	float:left;
+}
+.requirements__paragraph{
+	width:450px;
+	height:133px;
+	display:block;
+		p{
+			font-family:$roboto;
+			font-size:14px;
+			font-weight: normal;
+			color:#858585;
+			height:90px;
+			display:block;
+			padding-top:27px;
+			}
+		}
+.requirements__paragraph--copy:before{
+	content:"";
+	background:url(../image/sprite_round_figure.png)no-repeat;
+	left:745px;
+	width:123px;
+	height:123px;
+	position:absolute;
+}
+.requirements__paragraph--state:before{
+	@extend .requirements__paragraph--copy:before;
+	background-position:-122px 0px;
+}
+.requirements__paragraph--age:before{
+	@extend .requirements__paragraph--copy:before;
+	background-position:-244px 0px;
+}
+.requirements__background-cost{
+	background:url(../image/background_requirements.png) no-repeat;
+	background-size:100% 360px;
+	height:420px;
+	overflow:hidden;
+	text-align:center;
+	clear:both;
+}
+.requirements__title-cost{
+	display:block;
+	margin:auto;
+	height:80px;
+	width:985px;
+	padding-top:107px;
+	padding-bottom:16px;
+	font-family:$missfonts;
+	font-size:36px;
+	font-weight:bold;
+	color:$white;
+}

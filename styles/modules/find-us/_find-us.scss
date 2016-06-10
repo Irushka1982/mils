@@ -1,0 +1,30 @@
+#find-us{
+	background:$bluefind-us;
+	height:230px;
+}
+.find-us__title{
+	margin:auto;
+	display:block;
+	font-weight:bold;
+	font-family:$missfonts;
+	font-size:24px;
+	color:$white;
+	width:435px;
+	padding-top:44px;
+	padding-bottom:22px;
+}
+
+.find-us__logo{
+	background:url(../image/trade_in.png)no-repeat;
+	margin:auto;
+	width:273px;
+	height:135px;
+	display:block;
+}
+.find-us__map{
+	height:561px;
+	background:url(../image/map.png)no-repeat;
+	background-size:100% 600px;
+	display:block;
+	margin:auto;
+}

@@ -1,0 +1,49 @@
+	#your-advantage{
+	text-align:center;
+}
+
+.advantage{
+	width:284px;
+	text-align:center;
+	display:inline-block;
+	padding-bottom:103px;
+}
+
+.advantage__text{
+	font-size:13px;
+	width:277px;
+	color:$greylight;
+	font-family:$roboto;
+	clear:both;
+		span{
+			font-weight:bold;
+			color:$greydark;
+		}
+}
+
+.advantage__picture{
+	width:250px;
+	height:250px;
+}
+.advantage__picture--price:before{
+	content:"";
+	background:url(../image/round_sprite.png) no-repeat;
+	width:211px;
+	height:250px;
+	position:relative;
+	top:0px;
+	float:left;
+	left:24px;
+}
+.advantage__picture--guarantee:before{
+	@extend .advantage__picture--price:before;
+	background-position: -223px 0;
+}
+.advantage__picture--service:before{
+	@extend .advantage__picture--price:before;
+	background-position: -433px 1px;
+}
+.advantage__picture--guaranteeMacPoint:before{
+	@extend .advantage__picture--price:before;
+	background-position: -646px 0;
+}

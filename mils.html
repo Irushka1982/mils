@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Tradein</title>
-	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/main.css">
 	<link rel="stylesheet" href="styles/owl.carousel.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -162,7 +162,7 @@
 			</div>
 		</div>
 		<div class="requirements__background-cost">
-			<h2 class="cost__title">Узнайте, какой будет стоимость обмена прямо сейчас</h2>
+			<h2 class="requirements__title-cost">Узнайте, какой будет стоимость обмена прямо сейчас</h2>
 			<button class="button-main button-main--cost">Оценить устройство онлайн</button>
 		</div>
 	</section>		
@@ -178,7 +178,7 @@
 		</div>
 	</section>
 	<section id="testimonial">
-		<h2 class="title title--testimonial">Отзывы о нас</h2>
+		<h2 class="title">Отзывы о нас</h2>
 		<div class="testimonial__carusel">							
 		    <div id="owl-demo" class="owl-carousel owl-theme">		     
 			      <div class="item">
@@ -281,13 +281,13 @@
 				<li class="contacts__list--mail"><a href="#">email@appletradein.ua</a></li>
 				<li class="contacts__list--skype"><a href="#">skypename</a></li>
 			</ul>
-			<p class="schedule">ПН-ПТ: с 10:00 — 19:00</p>
+			<p class="contacts__schedule">ПН-ПТ: с 10:00 — 19:00</p>
 			<ul class="network">
 				<li class="network__facebook"></li>
 				<li class="network__vk"></li>
 				<li class="network__twitter"></li>
 			</ul>
-			<div class="design-by"><a href="#">Mill's это сделали</a></div>
+			<div class="contacts__schedule__design-by"><a href="#">Mill's это сделали</a></div>
 		</section>
 	</footer>
 	<!--popups-->
@@ -301,7 +301,7 @@
 				<li><form id="popup__contacts" action="#">
 				<input class="popup__button" type="text" maxlength="19" size="13" form="popup__contacts"></form></li>
 				<li><form action=""><button class="popup__wait-for">Жду звонка</button></form></li>
-				<li><p class="feedback">Мы перезвоним вам в течении 30 <br>минут на указанный номер</p></li>
+				<li><p class="popup__feedback">Мы перезвоним вам в течении 30 <br>минут на указанный номер</p></li>
 			</ul>				
 		</div>		
 	</section>
@@ -317,7 +317,7 @@
 					<form action="#">
 				<input class="popup__button" type="text" size="13" form="popup__contacts"></form></li>				
 				<li><form action=""><button class="popup__wait-for">Жду звонка</button></form></li>
-				<li><p class="feedback">Мы перезвоним вам в течении 30 <br>минут на указанный номер</p></li>
+				<li><p class="popup__feedback">Мы перезвоним вам в течении 30 <br>минут на указанный номер</p></li>
 			</ul>				
 		</div>		
 	</section>
@@ -331,7 +331,7 @@
 				<li><form action="#">
 				<input class="popup__button" type="text" size="13" form="popup__contacts"></form></li>				
 				<li><form action="#"><button class="popup__wait-for">Жду звонка</button></form></li>
-				<li><p class="feedback">Мы перезвоним вам в течении 30 <br>минут на указанный номер</p></li>
+				<li><p class="popup__feedback">Мы перезвоним вам в течении 30 <br>минут на указанный номер</p></li>
 
 			</ul>				
 		</div>		
@@ -350,10 +350,10 @@
 						<div class="popup-content__select popup-content__select--arrow-left"></div>
 						<div class="popup-content__list popup-content__list--left">
 							<div class="menu-old-products">
-								<div class="popup-content__button-back"><a class="back"><span>Назад</span></a></div>
+								<div class="button-back"><a class="back"><span>Назад</span></a></div>
 								<ul class="popup-content__menu">
 									<li class="menu__type-group"><span>iPhone 4</span></li>
-									<li class="menu__model" data-productid="1" data-price-left="2000">
+									<li class="menu__model" data-productid="1" data-price-left="10000">
 										<p class="menu__type">iPhone 4</p>
 										<p class="menu__specification">3G</p>
 										<p class="menu__specification">8Gb</p>
@@ -398,7 +398,7 @@
 								</ul>
 							</div>				
 							<div class="products products--left">
-								<div class="product-card--left" data-id="1">	
+								<div class="selected-model selected-model--left" data-id="1">	
 									<hgroup>
 										<h2 class="selected-model__title">Ваше устройство</h2>
 										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
@@ -407,14 +407,14 @@
 									<figure>
 										<img class="selected-model__your-gadget" src="image/my_gadget-left.png" alt="your-gadget">
 										<figcaption>
-											<p class="selected-model__price">Оценочная стоимость 2000 грн</p>
+											<p class="selected-model__price">Оценочная стоимость 10000 грн</p>
 										</figcaption>					
 									</figure>
 									<div class="selected-model__line"></div>
 									<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
 									
 								</div>
-								<div class="product-card--left" data-id="2">	
+								<div class="selected-model selected-model--left" data-id="2">	
 									<hgroup>
 										<h2 class="selected-model__title">Ваше устройство</h2>
 										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
@@ -430,7 +430,7 @@
 									<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
 									
 								</div>
-								<div class="product-card--left" data-id="3">	
+								<div class="selected-model selected-model--left" data-id="3">	
 									<hgroup>
 										<h2 class="selected-model__title">Ваше устройство</h2>
 										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
@@ -446,7 +446,7 @@
 									<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
 								
 								</div>
-								<div class="product-card--left" data-id="4">	
+								<div class="selected-model selected-model--left" data-id="4">	
 									<hgroup>
 										<h2 class="selected-model__title">Ваше устройство</h2>
 										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
@@ -462,7 +462,7 @@
 									<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
 									
 								</div>
-								<div class="product-card--left" data-id="5">	
+								<div class="selected-model selected-model--left" data-id="5">	
 									<hgroup>
 										<h2 class="selected-model__title">Ваше устройство</h2>
 										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
@@ -478,7 +478,7 @@
 									<a class="another-gadget another-gadget--left">Выбрать другое устройство</a>
 									
 								</div>
-								<div class="product-card--left" data-id="6">	
+								<div class="selected-model selected-model--left" data-id="6">	
 									<hgroup>
 										<h2 class="selected-model__title">Ваше устройство</h2>
 										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
@@ -501,7 +501,7 @@
 						<div class="popup-content__list popup-content__list--right">
 							<div class="popup-content__transparent-block"></div>
 							<div class="menu-new-products">
-								<div class="popup-content__button-back"><a class="back"><span>Назад</span></a></div>
+								<div class="button-back"><a class="back"><span>Назад</span></a></div>
 								<ul class="popup-content__menu">
 									<li class="menu__type-group"><span>iPhone 4</span></li>
 									<li class="menu__model" data-parentproductid="1" data-subprodid="1" data-price-right="5000">				
@@ -550,7 +550,7 @@
 								</ul>
 							</div>
 							<div class="products products--right">
-								<div class="product-card--right" data-parentproductid="1" data-subid="1">	
+								<div class="selected-model selected-model--right" data-parentproductid="1" data-subid="1">	
 									<hgroup>
 										<h2 class="selected-model__title">Ваше устройство</h2>
 										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
@@ -566,7 +566,7 @@
 									<a class="another-gadget another-gadget--right">Выбрать другое устройство</a>
 									
 								</div>
-								<div class="product-card--right" data-parentproductid="1" data-subid="2">	
+								<div class="selected-model selected-model--right" data-parentproductid="1" data-subid="2">	
 									<hgroup>
 										<h2 class="selected-model__title">Ваше устройство</h2>
 										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
@@ -582,7 +582,7 @@
 									<a class="another-gadget another-gadget--right">Выбрать другое устройство</a>
 									
 								</div>
-								<div class="product-card--right" data-parentproductid="1" data-subid="3">	
+								<div class="selected-model selected-model--right" data-parentproductid="1" data-subid="3">	
 									<hgroup>
 										<h2 class="selected-model__title">Ваше устройство</h2>
 										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
@@ -598,7 +598,7 @@
 									<a class="another-gadget another-gadget--right">Выбрать другое устройство</a>
 									
 								</div>
-								<div class="product-card--right" data-parentproductid="1" data-subid="4">	
+								<div class="selected-model selected-model--right" data-parentproductid="1" data-subid="4">	
 									<hgroup>
 										<h2 class="selected-model__title">Ваше устройство</h2>
 										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
@@ -614,7 +614,7 @@
 									<a class="another-gadget another-gadget--right">Выбрать другое устройство</a>
 									
 								</div>
-								<div class="product-card--right" data-parentproductid="1" data-subid="5">	
+								<div class="selected-model selected-model--right" data-parentproductid="1" data-subid="5">	
 									<hgroup>
 										<h2 class="selected-model__title">Ваше устройство</h2>
 										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
@@ -630,7 +630,7 @@
 									<a class="another-gadget another-gadget--right">Выбрать другое устройство</a>
 									
 								</div>
-								<div class="product-card--right" data-parentproductid="1" data-subid="6">	
+								<div class="selected-model selected-model--right" data-parentproductid="1" data-subid="6">	
 									<hgroup>
 										<h2 class="selected-model__title">Ваше устройство</h2>
 										<h3 class="selected-model__subtitle">iPhone 4 16 GB</h3>
@@ -656,20 +656,22 @@
 						<input class="popup__button popup__button--border" type="text" size="13" form="popup__contacts"></form>
 						</li>
 						<li><form action=""><button class="popup__wait-for popup__wait-for--blue">Жду звонка</button></form></li>
-						<li><p class="feedback feedback--color">Оформление заявки не обязывает вас <br> к покупке или продаже устройства!</p></li>
+						<li><p class="popup__feedback popup__feedback--color">Оформление заявки не обязывает вас <br> к покупке или продаже устройства!</p></li>
 					</ul>
-					<section class="result">
+					<section class="result-section">
 						<div class="popup-content__result">
 							<p class="popup-content__result-title"></p>
+							<p class="popup-content__result-titlea"></p>
+							
 							<form action=""><button class="popup__wait-for popup__wait-for--blue">Обменять устройство</button></form>
-							<p class="feedback feedback--color">Оформление заявки не обязывает вас <br> к покупке или продаже устройства!</p>
+							<p class="popup__feedback popup__feedback--color">Оформление заявки не обязывает вас <br> к покупке или продаже устройства!</p>
 						</div>
 					</section>
-				<section class="popup-content__buttom-block">
-					<div class="popup-content__buttom-icon popup-content__buttom-icon--cool"><span>Сервис от опытных специалистов</span><br>Мы обслужили уже <br>более 10 000 клиентов.</div>
-					<div class="popup-content__buttom-icon popup-content__buttom-icon--pig"><span>Наиболее выгодные цены</span><br>благодаря крупному <br>товарообороту.</div>
-					<div class="popup-content__buttom-icon popup-content__buttom-icon--gadget"><span>Гарантия исправности<br>и безопасности</span>— мы проверяем<br>свои товары.</div>
-					<div class="popup-content__buttom-icon popup-content__buttom-icon--assurance"><span>Гарантию на все виды техники</span><br>от специализированного<br> сервисного центра MacPoint.</div>
+				<section class="buttom-block">
+					<div class="buttom-block__icon buttom-block__icon--cool"><span>Сервис от опытных специалистов</span><br>Мы обслужили уже <br>более 10 000 клиентов.</div>
+					<div class="buttom-block__icon buttom-block__icon--pig"><span>Наиболее выгодные цены</span><br>благодаря крупному <br>товарообороту.</div>
+					<div class="buttom-block__icon buttom-block__icon--gadget"><span>Гарантия исправности<br>и безопасности</span>— мы проверяем<br>свои товары.</div>
+					<div class="buttom-block__icon buttom-block__icon--assurance"><span>Гарантию на все виды техники</span><br>от специализированного<br> сервисного центра MacPoint.</div>
 				</section>
 			</section>
 		</div>

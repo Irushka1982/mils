@@ -1,0 +1,66 @@
+
+.popup-content__menu{
+	list-style:none;
+	width:321px;
+	height:100px;
+}
+.menu__type-group{
+	height:30px;
+	background:$grey-content-fon;
+	span{
+		font-family:$roboto;
+		font-size: 10px;
+		font-weight: normal;
+		color:#333333;
+		padding-left:20px;
+		display: block;
+		line-height: 35px;
+	}
+}
+.menu__model{
+	height:68px;
+	border:1px solid $grey-content-fon;
+	background:#f0f0f0;
+}
+
+.menu__model:before{
+	position:relative;
+	float:left;
+	width:51px;
+	height:44px;
+	background:url(../image/gadget_icon.png)no-repeat;
+	left:10px;
+	top: 10px;
+	content:"";
+}
+.menu__type{
+	font-family:$roboto;
+	font-size: 10px;
+	font-weight: bold;
+	color:$grey-button-normal;
+	line-height: 32px;
+	padding-bottom:2px;
+}
+.menu__specification{
+	display:block;
+	padding-right:5px;
+	float:left;
+	height:35px;
+	font-family:$roboto;
+	font-size: 14px;
+	font-weight: normal;
+	color:$grey-button-click;
+	padding-right:28px;
+	span{
+		font-size:12px;
+	}
+}		
+.menu__arrow{
+	background:url(../image/popup_arrow.png)no-repeat;
+	width:30px;
+	height:30px;
+	display:block;
+	position:relative;
+	top:-13px;
+	right:-273px;
+}

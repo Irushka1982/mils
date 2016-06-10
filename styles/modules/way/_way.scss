@@ -1,0 +1,54 @@
+.way{
+	margin:auto;
+	height:316px;
+	overflow:hidden;
+}
+.way__picture{
+	display:inline-block;
+}
+.way__content{
+	display:inline-block;
+	width:637px;
+	overflow:hidden;
+	height:245px;
+}
+
+.way__content--advertisement:before{
+	content:"";
+	left:700px;
+	position:absolute;
+	width:205px;
+	height:242px;
+	background-position:-3px 30px;
+	background:url(../image/sprite_way_to_sell.png) no-repeat;
+}
+.way__content--pawnshop:before{
+	@extend .way__content--advertisement:before;
+	background-position: -192px 30px;	
+}
+.way__content--commission:before{
+	@extend .way__content--advertisement:before;
+	background-position: -393px 30px;	
+}
+
+.way__title{
+	font-family:$roboto;
+	font-weight:normal;
+	font-size:24px;
+	color:$greydark;
+	width:430px;
+	display:block;
+	margin:auto;
+	padding-bottom:48px;
+	padding-top:20px;	
+}
+.way__text{
+	width:380px;
+	font-family:$roboto;
+	font-weight:normal;
+	font-size:14px;
+	color:$greydark;
+	display:block;
+	text-align:center;
+	margin:auto;
+}

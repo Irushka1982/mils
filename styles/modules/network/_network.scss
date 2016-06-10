@@ -1,0 +1,39 @@
+
+.network {
+	list-style:none;
+	display:block;
+	width:158px;
+	margin:auto;
+	height:81px;
+}
+
+.network__facebook{
+	margin-right: 15px;
+	width:37px;
+	height: 37px;
+	position:relative;
+	background:url(../image/network_icon.png) no-repeat;
+	display:block;
+	float:left;		
+}
+.network__facebook:hover{
+	cursor:pointer;
+	background-position:0 -39px;
+}
+
+.network__vk {
+	@extend .network__facebook;
+	background-position:-36px 0px;
+}
+.network__vk:hover{
+	background-position:-36px -39px;
+}
+
+.network__twitter {
+	@extend .network__facebook;
+	background-position:-73px 0px;		
+}
+.network__twitter:hover {
+	@extend .network__facebook;
+	background-position:-73px -39px;
+}

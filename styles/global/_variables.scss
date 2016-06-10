@@ -1,0 +1,31 @@
+
+$blue-button-normal: #30a9e5;
+$blue-button-hover:#65c2f0;
+$blue-button-click: #2e77ab;
+
+$grey-button-normal:#b8b8b8;
+$grey-button-hover:#d5d4d4;
+$grey-button-click:#948f8f;
+
+$popup-background:#30a9e5;
+
+$grey-content-fon:#e3e3e3;
+$grey: #b8b8b8;
+$greymiddle:#616161;
+$greylight:#999999;
+$greydark:#333333;
+$greymoredark:#666666;
+$bluefind-us:#30a9e5;
+$white:#ffffff;
+
+$roboto: 'Roboto', sans-serif;
+$missfonts:'Amazing Grotesk';
+
+
+@font-face {
+    font-family: "Amazing Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/Amazing Grotesk/Amazing Grotesk Demi.otf") format("otf"),
+ 
+}

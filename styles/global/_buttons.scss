@@ -1,0 +1,36 @@
+
+.button-main {
+	margin:auto;	
+	width:270px;
+	height:67px;
+	font-size:13px;
+	border-radius:5px;
+	border: 1px solid transparent;
+	background:$blue-button-normal;
+	color:$white;
+}
+.button-main:hover{
+	background:$blue-button-hover;
+}
+.button-main:active{
+	background:$blue-button-click;
+	border:none;
+}
+
+
+
+.button-main--grey{
+	background:$grey-button-normal;
+}
+.button-main--grey:hover{
+	background:$grey-button-hover;
+}
+.button-main--grey:active{
+	background:$grey-button-click;
+}
+
+.button-main--catalog{
+	display:block;
+	height:87px;
+}
+

@@ -1,0 +1,31 @@
+
+.consultation{
+	background:url(../image/background_consultation.png) no-repeat;
+	background-size:100% 380px;
+	height:423px;
+	margin:auto;
+	text-align:center;
+	overflow:hidden;
+}
+.consultation__title{
+	width:920px;
+	margin:auto;
+	display:block;
+	padding-top:95px;
+	padding-bottom:54px;
+		p{font-size:24px;
+			font-family:$missfonts;
+			font-weight:bold;
+			color:$white;
+			text-align:center;
+		}
+}
+.consultation__picture{
+	content:"";
+	position:relative;
+	background:url(../image/headphones.png) 0 0 no-repeat;
+	left:574px;
+	width:428px;
+	height:141px;
+	top:-94px;
+}

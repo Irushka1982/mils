@@ -22,19 +22,14 @@ $(document).ready(function(){
             (".popup-content__result-title").empty();
         });
 
-
-
-
-
     var priceLeft;
     var priceRight;
     var mainprice;
 
-
       $(".menu-old-products li").click(function(e){
           e.preventDefault();
           var id = $(this).attr("data-productid");
-          $('.product-card--left').hide();
+          $('.selected-model--left').hide();
           if ( id ) {
             $('[data-id="'+id+'"]').show();
           }
@@ -44,9 +39,9 @@ $(document).ready(function(){
           $(".popup-content__transparent-block").hide();
           $(".menu-new-products li[data-parentproductid='"+id+"']").show();
           $(".popup-content__select--arrow-left").hide();
-          
-           priceLeft = $(this).attr("data-price-left");
-         
+       
+           priceLeft = $(this).attr("data-price-left");           
+       
       });
 
        $(".menu-new-products li").click(function(e){
@@ -57,28 +52,44 @@ $(document).ready(function(){
             $(".menu-new-products").hide().css("order","2");
             $(".products--right").css("order","1");
             $(".products--right").css("display","block");
-            $(".product-card--right").hide();
+            $(".selected-model--right").hide();
             $("[data-subid='"+sub_id+"']").show();
            $(".popup-content__result").show();
            $(".popup-content__select--arrow-right").hide();
 
           priceRight = $(this).attr("data-price-right");
-            
-          mainprice = Math.abs(+priceRight - +priceLeft);  
+    
+             $(function () {
 
-          $( ".popup-content__result-title" ).prepend( document.createTextNode('Вы заработаете' + ' ' + mainprice + ' ' + 'грн') );
+            if(+priceLeft < +priceRight){
+             mainprice = Math.abs(+priceLeft - +priceRight);
+                      console.log('Вы заработаете' + ' ' + priceLeft + ' ' + 'грн');
+                      console.log('Cумма к оплате ' + ' ' + mainprice + ' ' + 'грн');
+                      $( ".popup-content__result-title" ).prepend( document.createTextNode('Вы заработаете' + ' ' + +priceLeft + ' ' + 'грн') );
+                 $( ".popup-content__result-titlea" ).prepend( document.createTextNode('Cумма к оплате ' + ' ' + mainprice + ' ' + 'грн') );
             }
 
-});
+            else{
 
-        $(".another-gadget--left").click(function(e){
+            mainprice = Math.abs(+priceRight - +priceLeft);
+                      console.log('Вы заработаете' + ' ' + priceLeft + ' ' + 'грн');
+                      console.log('Cумма к оплате ' + ' ' + mainprice + ' ' + 'грн');
+                 $( ".popup-content__result-title" ).prepend( document.createTextNode('Вы заработаете ' + ' ' + mainprice + ' ' + 'грн') );
+            }
+               
+            });  
+    }
+});
+  
+
+       $(".another-gadget--left").click(function(e){
          e.preventDefault(); 
          
             $(".popup-content__select--arrow-left").show();
             $('.menu-old-products').show().css("order","1");
             $(".products--left").hide().css("order","2");
             $(".popup-content__transparent-block").show();
-           
+           $(".popup-content__result-titlea").empty();
             $(".popup-content__result-title").empty();
              $(".popup-content__result").hide(); 
         });
@@ -89,6 +100,8 @@ $(document).ready(function(){
           $('.menu-new-products').show().css("order","1");
           $(".products--right").hide().css("order","2"); 
           $(".popup-content__result").hide();
+                     $(".popup-content__result-titlea").empty();
+
           $(".popup-content__result-title").empty();
           $(".popup-content__select--arrow-right").show();
       });
@@ -102,6 +115,7 @@ $(document).ready(function(){
           $(".products--right").hide(); 
           $(".popup-save").slideToggle("slow");
           $(".popup-content__result").hide();
+           $(".popup-content__result-titlea").empty();
           $(".popup-content__result-title").empty();
        });
 
@@ -168,8 +182,5 @@ $(document).ready(function(){
              .end().filter("[href='#"+id+"']").parent().addClass("menu-nav__sell--active");
        }                   
     });
-
-
-
 
 });

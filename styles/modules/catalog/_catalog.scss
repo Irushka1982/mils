@@ -1,0 +1,51 @@
+.catalog{
+	text-align:center;
+}
+.catalog__subtitle{
+	font-family:$roboto;
+	font-weight:normal;
+	font-size:14px;
+	color: $greymoredark;
+	text-align:center;
+	padding-bottom:33px;
+}
+
+.catalog__picture{
+	width:1241px;
+	height:789px;
+	margin:auto;
+	background:url(../image/accessories.png) no-repeat;
+}
+
+.catalog__button-block{
+	width:500px;
+	height:62px;
+	display: block;
+	position:relative;
+	left:827px;
+	top:-173px;
+}
+
+.catalog__link:before{
+	content:"";
+	background:url(../image/hot-store-buttom.png) no-repeat;
+	position:relative;
+	width:171px;
+	height:40px;
+	left:0px;
+	top:-2px;
+	float:left;
+}
+
+.catalog__link{
+	display:block;
+	width:160px;
+	height:30px;
+	padding-top:16px;
+	float:left;
+		a{font-size:12px;
+		font-family:$roboto;
+		font-weight:normal;
+		color: $greymoredark;
+	}
+}

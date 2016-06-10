@@ -1,0 +1,76 @@
+
+#your-opportunity{
+	text-align:center;
+	overflow:hidden;
+	height:761px;
+}
+.opportunity{
+	width:402px;
+	height:450px;
+	display:inline-block;
+	padding-top:21px;
+}
+.opportunity__title{
+	height:60px;
+	width:154px;
+	font-size:18px;
+	font-family:$roboto;
+	font-weight: normal;
+	margin:auto;
+	display:block;
+		span{
+		font-size:24px;
+		width: 107px;
+		font-family:$roboto;
+		font-weight: normal;
+		}
+}
+.opportunity__picture{
+	width:300px;
+}
+.opportunity__picture--sell{
+	content:"";
+	background:url(../image/gadget_sprite.png) no-repeat;
+	width:276px;
+	height:341px;
+	position:relative;
+	top:53px;
+	left:36px;
+}
+.opportunity__picture--exchange{
+	@extend .opportunity__picture--sell;
+	background-position:-274px 0px;
+}
+
+.opportunity__picture--buy{
+	@extend .opportunity__picture--sell;
+	background-position:-562px 0px;
+}
+
+.opportunity__picture--exchange:before{
+	content:"";
+	width:1px;
+	height:557px;
+	position:absolute;
+	float:left;
+	background-color:$greylight;
+	top:-124px;
+	left:-58px;
+}
+.opportunity__picture--exchange:after{
+	@extend .opportunity__picture--exchange:before;
+	background-color:$grey;
+	left:338px;
+	float:right;
+}
+
+.opportunity__menu{
+	width:280px;
+	height:125px;
+	margin:auto;
+	li{
+		font-size:14px;
+		text-align:left;
+		font-family:$roboto;
+		}
+}
