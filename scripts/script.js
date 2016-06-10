@@ -1,14 +1,14 @@
 
 $(document).ready(function(){
-/*popup  show and hide popup window*/
+/* show and hide popup-exchange window*/
         $(".button-main--exchange, .popup__transparent--exchange, .popup__close-button--exchange").click(function(){
             $(".popup-exchange").slideToggle("slow");
         }); 
-
+/* show and hide popup-consultation window*/
      $(".popup__close-button--consultation, .button-main--consultation, .consultation__picture,  .popup__transparent--consultation").click(function(){
             $(".popup-consultation").slideToggle("slow");
         });
-
+/* show and hide popup-consultation-catalog window*/
      $(".popup__close-button--consultation-catalog, .button-main--catalog, .popup__transparent--catalog").click(function(){
             $(".popup-consultation-catalog").slideToggle("slow");
         });
@@ -28,7 +28,7 @@ $(document).ready(function(){
     var mainprice;
 
     
-/*  click function to select a product, left block; */
+/*  click function to select a product, menu-old-products; */
   
   
       $(".menu-old-products li").click(function(e){
@@ -49,7 +49,7 @@ $(document).ready(function(){
        
       });
 
-  /*  click function to select a product, right block; */
+  /*  click function to select a product, menu-new-products; */
  
        $(".menu-new-products li").click(function(e){
             e.preventDefault();
@@ -70,18 +70,15 @@ $(document).ready(function(){
              $(function () {
 
             if(+priceLeft < +priceRight){
-             mainprice = Math.abs(+priceLeft - +priceRight);/*count*/
-                      console.log('Вы заработаете' + ' ' + priceLeft + ' ' + 'грн');
-                      console.log('Cумма к оплате ' + ' ' + mainprice + ' ' + 'грн');
-                      $( ".popup-content__result-title" ).prepend( document.createTextNode('Вы заработаете' + ' ' + +priceLeft + ' ' + 'грн') );
+             mainprice = Math.abs(+priceLeft - +priceRight);/*count if priceLeft < priceRight*/
+                  $( ".popup-content__result-title" ).prepend( document.createTextNode('Вы заработаете' + ' ' + +priceLeft + ' ' + 'грн') );
                  $( ".popup-content__result-titlea" ).prepend( document.createTextNode('Cумма к оплате ' + ' ' + mainprice + ' ' + 'грн') );
             } /*write the result to display*/
 
             else{
 
-            mainprice = Math.abs(+priceRight - +priceLeft);/*count*/
-                      console.log('Вы заработаете' + ' ' + priceLeft + ' ' + 'грн');
-                      console.log('Cумма к оплате ' + ' ' + mainprice + ' ' + 'грн');
+            mainprice = Math.abs(+priceRight - +priceLeft);/*count if priceLeft > priceRight*/
+                     
                  $( ".popup-content__result-title" ).prepend( document.createTextNode('Вы заработаете ' + ' ' + mainprice + ' ' + 'грн') );
             }/*write the result to display*/
                
@@ -119,7 +116,7 @@ click on the link on the right cards-block;*/
       });
 
 
-
+/*return to the default state when close popup-save window*/
       $(".popup-save__button-close").click(function(e){
           $(".menu-old-products").show();
           $(".products--left").hide();
