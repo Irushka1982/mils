@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 /* show and hide popup-exchange window*/
         $(".button-main--exchange, .popup__transparent--exchange, .popup__close-button--exchange").click(function(){

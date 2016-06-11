@@ -1,20 +1,9 @@
-/*network*/
-/*button-grey*/
-/*popup*/
-/*popup-content*/
-
-@font-face {
-    font-family: 'amazing_groteskdemibold';
-    src: url("../fonts/Amazing Grotesk/amazing_grotesk_demi-webfont.woff") format('woff'),
-         url("../fonts/Amazing Grotesk/amazing_grotesk_demi-webfont.woff2") format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 .title {
   font-size: 36px;
   text-align: center;
   display: block;
-  font-family: "Amazing Grotesk";
+  font-family: "amazing_groteskdemibold";
   padding-bottom: 38px; }
 
 .button-main {
@@ -42,11 +31,17 @@
 
 .button-main--grey:active {
   background: #948f8f; }
-
+ 
 .button-main--catalog {
   display: block;
   height: 87px; }
 
+@font-face {
+  font-family: 'amazing_groteskdemibold';
+  src: url("../fonts/Amazing Grotesk/amazing_grotesk_demi-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/*modules BEM-blocks*/
 .work-rulls {
   text-align: center; }
 
@@ -261,7 +256,7 @@
   padding-bottom: 54px; }
   .consultation__title p {
     font-size: 24px;
-    font-family: "Amazing Grotesk";
+    font-family: "amazing_groteskdemibold";
     font-weight: bold;
     color: #ffffff;
     text-align: center; }
@@ -284,7 +279,7 @@
   float: left;
   padding-left: 240px; }
   .requirements__title p {
-    font-family: "Amazing Grotesk";
+    font-family: "amazing_groteskdemibold";
     font-size: 36px;
     font-weight: bold;
     color: #333333;
@@ -336,7 +331,7 @@
   width: 985px;
   padding-top: 107px;
   padding-bottom: 16px;
-  font-family: "Amazing Grotesk";
+  font-family: "amazing_groteskdemibold";
   font-size: 36px;
   font-weight: bold;
   color: #ffffff; }
@@ -454,7 +449,7 @@
   margin: auto;
   display: block;
   font-weight: bold;
-  font-family: "Amazing Grotesk";
+  font-family: "amazing_groteskdemibold";
   font-size: 24px;
   color: #ffffff;
   width: 435px;
@@ -533,7 +528,7 @@
   height: 1000px; }
 
 .popup__title {
-  font-family: "Amazing Grotesk";
+  font-family: "amazing_groteskdemibold";
   font-size: 24px;
   font-weight: bold;
   color: #ffffff;
@@ -666,36 +661,10 @@
   width: 530px;
   text-align: center;
   margin: auto;
-  font-family: 'amazing_groteskdemibold';
+  font-family: "amazing_groteskdemibold";
   padding-top: 51px;
   padding-bottom: 18px;
   color: #ffffff; }
-
-.apple-store {
-  background: url(../image/apple-store_bkg.png) 0px 0px no-repeat;
-  height: 70px;
-  width: 320px;
-  margin: auto;
-  padding-bottom: 25px; }
-
-.apple-store__text {
-  font-size: 11px;
-  width: 128px;
-  font-family: "Roboto", sans-serif;
-  color: #616161;
-  font-weight: normal;
-  padding-top: 15px;
-  padding-left: 8px; }
-
-.apple-store__logo {
-  content: "";
-  background: url(../image/hot-store.png) no-repeat;
-  position: relative;
-  z-index: 2;
-  top: -27px;
-  left: 145px;
-  width: 115px;
-  height: 26px; }
 
 .news-text {
   width: 565px;
@@ -780,120 +749,6 @@
   margin: auto;
   padding-bottom: 64px; }
 
-.contacts {
-  width: 212px;
-  height: 344px;
-  background-color: #ffffff;
-  display: block;
-  position: relative;
-  left: 1340px;
-  padding: 30px;
-  top: 50px; }
-
-.contacts__title {
-  font-family: "Amazing Grotesk";
-  font-size: 18px;
-  font-weight: bold;
-  color: #333333;
-  margin: auto;
-  width: 160px;
-  height: 65px; }
-
-.contacts__list {
-  list-style: none;
-  padding-left: 50px;
-  padding-bottom: 21px; }
-  .contacts__list li {
-    height: 30px;
-    width: 200px; }
-
-.contacts__list--phone, .contacts__list--mail, .contacts__list--skype {
-  color: #616161;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: normal; }
-
-.contacts__list--mail a {
-  color: #30a9e5; }
-
-.contacts__list--skype a {
-  color: #30a9e5; }
-
-.contacts__list--phone:before, .contacts__list--mail:before, .contacts__list--skype:before {
-  content: "";
-  background: url(../image/contacts_icon.png) 0 0 no-repeat;
-  width: 16px;
-  height: 23px;
-  left: 35px;
-  position: absolute; }
-
-.contacts__list--mail:before {
-  background-position: -15px 0; }
-
-.contacts__list--skype:before {
-  background-position: -32px 0; }
-
-.contacts__schedule {
-  color: #666666;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  margin: auto;
-  width: 160px;
-  padding-bottom: 41px; }
-
-.network {
-  list-style: none;
-  display: block;
-  width: 158px;
-  margin: auto;
-  height: 81px; }
-
-.network__facebook, .network__vk, .network__twitter, .network__twitter:hover {
-  margin-right: 15px;
-  width: 37px;
-  height: 37px;
-  position: relative;
-  background: url(../image/network_icon.png) no-repeat;
-  display: block;
-  float: left; }
-
-.network__facebook:hover, .network__vk:hover, .network__twitter:hover {
-  cursor: pointer;
-  background-position: 0 -39px; }
-
-.network__vk {
-  background-position: -36px 0px; }
-
-.network__vk:hover {
-  background-position: -36px -39px; }
-
-.network__twitter {
-  background-position: -73px 0px; }
-
-.network__twitter:hover {
-  background-position: -73px -39px; }
-
-.contacts__schedule__design-by {
-  float: right;
-  padding-right: 23px; }
-  .contacts__schedule__design-by a {
-    color: #999999;
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    width: 103px;
-    text-decoration: none; }
-
-.contacts__schedule__design-by:before {
-  content: "";
-  background: url(../image/design_by_logo.png) no-repeat;
-  position: absolute;
-  float: left;
-  width: 91px;
-  height: 24px;
-  left: 53px; }
-
 .popup-save {
   clear: both;
   display: none;
@@ -963,7 +818,7 @@
 
 .popup-content__result-title {
   font-size: 24px;
-  font-family: "Amazing Grotesk";
+  font-family: "amazing_groteskdemibold";
   font-weight: normal;
   color: #666e72;
   margin: auto;
@@ -974,7 +829,7 @@
 
 .popup-content__result-titlea {
   font-size: 24px;
-  font-family: "Amazing Grotesk";
+  font-family: "amazing_groteskdemibold";
   font-weight: normal;
   color: #666e72;
   margin: auto;
@@ -1211,7 +1066,7 @@
 .popup-content__title {
   display: block;
   margin: auto;
-  font-family: "Amazing Grotesk";
+  font-family: "amazing_groteskdemibold";
   font-size: 30px;
   color: #000000;
   width: 660px;
@@ -1266,5 +1121,145 @@
   position: absolute;
   top: 220px;
   right: 346px; }
+
+.network {
+  list-style: none;
+  display: block;
+  width: 158px;
+  margin: auto;
+  height: 81px; }
+
+.network__facebook, .network__vk, .network__twitter, .network__twitter:hover {
+  margin-right: 15px;
+  width: 37px;
+  height: 37px;
+  position: relative;
+  background: url(../image/network_icon.png) no-repeat;
+  display: block;
+  float: left; }
+
+.network__facebook:hover, .network__vk:hover, .network__twitter:hover {
+  cursor: pointer;
+  background-position: 0 -39px; }
+
+.network__vk {
+  background-position: -36px 0px; }
+
+.network__vk:hover {
+  background-position: -36px -39px; }
+
+.network__twitter {
+  background-position: -73px 0px; }
+
+.network__twitter:hover {
+  background-position: -73px -39px; }
+
+.contacts {
+  width: 212px;
+  height: 344px;
+  background-color: #ffffff;
+  display: block;
+  position: relative;
+  left: 1340px;
+  padding: 30px;
+  top: 50px; }
+
+.contacts__title {
+  font-family: "amazing_groteskdemibold";
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin: auto;
+  width: 160px;
+  height: 65px; }
+
+.contacts__list {
+  list-style: none;
+  padding-left: 50px;
+  padding-bottom: 21px; }
+  .contacts__list li {
+    height: 30px;
+    width: 200px; }
+
+.contacts__list--phone, .contacts__list--mail, .contacts__list--skype {
+  color: #616161;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: normal; }
+
+.contacts__list--mail a {
+  color: #30a9e5; }
+
+.contacts__list--skype a {
+  color: #30a9e5; }
+
+.contacts__list--phone:before, .contacts__list--mail:before, .contacts__list--skype:before {
+  content: "";
+  background: url(../image/contacts_icon.png) 0 0 no-repeat;
+  width: 16px;
+  height: 23px;
+  left: 35px;
+  position: absolute; }
+
+.contacts__list--mail:before {
+  background-position: -15px 0; }
+
+.contacts__list--skype:before {
+  background-position: -32px 0; }
+
+.contacts__schedule {
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin: auto;
+  width: 160px;
+  padding-bottom: 41px; }
+
+.contacts__schedule__design-by {
+  float: right;
+  padding-right: 23px; }
+  .contacts__schedule__design-by a {
+    color: #999999;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    width: 103px;
+    text-decoration: none; }
+
+.contacts__schedule__design-by:before {
+  content: "";
+  background: url(../image/design_by_logo.png) no-repeat;
+  position: absolute;
+  float: left;
+  width: 91px;
+  height: 24px;
+  left: 53px; }
+
+.apple-store {
+  background: url(../image/apple-store_bkg.png) 0px 0px no-repeat;
+  height: 70px;
+  width: 320px;
+  margin: auto;
+  padding-bottom: 25px; }
+
+.apple-store__text {
+  font-size: 11px;
+  width: 128px;
+  font-family: "Roboto", sans-serif;
+  color: #616161;
+  font-weight: normal;
+  padding-top: 15px;
+  padding-left: 8px; }
+
+.apple-store__logo {
+  content: "";
+  background: url(../image/hot-store.png) no-repeat;
+  position: relative;
+  z-index: 2;
+  top: -27px;
+  left: 145px;
+  width: 115px;
+  height: 26px; }
 
 /*# sourceMappingURL=main.css.map */
