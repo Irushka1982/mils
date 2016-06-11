@@ -6,7 +6,6 @@
 }
 
 
-
 .header-info{
 	background:url(../image/background_header.png)no-repeat;
 	background-size:100% 818px;
@@ -28,7 +27,7 @@
 	width:530px;
 	text-align:center;
 	margin:auto;
-	font-family:'Amazing Grotesk DemiBold';
+	font-family:$missfonts;
 	padding-top:51px;
 	padding-bottom:18px;
 	color:$white;
